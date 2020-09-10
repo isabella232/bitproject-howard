@@ -17,11 +17,9 @@
   <div class="section-2">
     <div class="w-dyn-list">
       <div role="list" class="w-dyn-items">
-        <div role="listitem" class="collection-item w-dyn-item"><a href="#" class="link"></a></div>
+        {%- assign collection = collections.announcements -%}{%- for item in collection -%}<div role="listitem" class="collection-item w-dyn-item"><a url="link" href="#" class="link">{{ item.data.announcement }}</a></div>{%- endfor -%}
       </div>
-      <div class="w-dyn-empty">
-        <div>No items found.</div>
-      </div>
+      
     </div>
   </div>
   <div id="header" class="section">
@@ -45,7 +43,7 @@
         <h1 class="heading-15"><strong>Creating Global Tech Community</strong></h1>
         <p class="paragraph-2 top">Empowering all students with the tools to learn technologies, educate their community, and contribute to open source technical projects.</p>
         <div class="div-block-5 left"><a href="#" class="button-2 w-button"><strong class="bold-text-3">Contribute ➔</strong></a></div>
-      </div><picture class="lazyload"><source type="image/webp" srcset="/static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-500.png.webp 500w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-800.png.webp 800w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1080.png.webp 1080w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1600.png.webp 1600w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right.png.webp 1658w" sizes="80px"><img loading="lazy" srcset="/static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-500.png 500w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-800.png 800w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1080.png 1080w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1600.png 1600w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right.png 1658w" sizes="80px" alt="" class="image-28 lazyload" data-src="/static/images/5f306b8ef273cf393ba00e6e_hero-photos-right.png"></picture></div>
+      </div><picture class="lazyload"><source type="image/webp" srcset="/static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-500.png.webp 500w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-800.png.webp 800w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1080.png.webp 1080w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1600.png.webp 1600w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right.png.webp 1658w" sizes="(max-width: 767px) 50vw, (max-width: 991px) 47vw, 470px"><img loading="lazy" srcset="/static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-500.png 500w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-800.png 800w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1080.png 1080w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1600.png 1600w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right.png 1658w" sizes="(max-width: 767px) 50vw, (max-width: 991px) 47vw, 470px" alt="" class="image-28 lazyload" data-src="/static/images/5f306b8ef273cf393ba00e6e_hero-photos-right.png"></picture></div>
   </div>
   <header id="about" class="hero-2 grey">
     <div class="flex-container-5 w-container">
@@ -90,16 +88,14 @@
     </div>
     <div class="collection-list-wrapper-3 w-dyn-list">
       <div role="list" class="collection-list-3 w-dyn-items">
-        <div role="listitem" class="w-dyn-item">
-          <div class="project-block"><picture class="lazyload"><source type="image/webp" srcset="/static/.webp"><img loading="lazy" alt="" class="image-11 lazyload" data-src="/static/"></picture>
-            <h2 class="heading-8"></h2>
-            <h1 class="heading-8 snall"></h1>
-            <p class="paragraph-3"></p><a href="#" class="button-invert small w-button"><strong class="bold-text">Learn More ➔</strong></a><a href="#" class="button-invert black w-button"><strong class="bold-text">RSVP</strong></a></div>
-        </div>
+        {%- assign collection = collections.events -%}{%- for item in collection -%}<div role="listitem" class="w-dyn-item">
+          <div class="project-block"><img loading="lazy" src="{{ item.data.icon }}" alt="" class="image-11">
+            <h2 class="heading-8">{{ item.data.title }}</h2>
+            <h1 class="heading-8 snall">{{ item.data.datetime }}</h1>
+            <p class="paragraph-3">{{ item.data.description }}</p><a href="{{ item.data.current-event }}" class="button-invert small w-button"><strong class="bold-text">Learn More ➔</strong></a><a href="{{ item.data.rsvp-link }}" class="button-invert black w-button"><strong class="bold-text">RSVP</strong></a></div>
+        </div>{%- endfor -%}
       </div>
-      <div class="w-dyn-empty">
-        <div>No items found.</div>
-      </div>
+      
     </div>
   </div>
   <div id="bootcamps" class="section-3">
@@ -109,16 +105,14 @@
     </div>
     <div class="collection-list-wrapper-3 w-dyn-list">
       <div role="list" class="collection-list-3 w-dyn-items">
-        <div role="listitem" class="w-dyn-item">
-          <div class="project-block-2"><picture class="lazyload"><source type="image/webp" srcset="/static/.webp"><img loading="lazy" alt="" class="image-11 lazyload" data-src="/static/"></picture>
-            <h1 class="heading-8"></h1>
-            <h1 class="heading-8 snall"></h1>
-            <p class="paragraph-3"></p><a href="#" class="button-invert w-button"><strong class="bold-text-2">Learn More ➔</strong></a><a href="#" class="button-invert black w-button"><strong class="bold-text-5">Apply</strong></a></div>
-        </div>
+        {%- assign collection = collections.bootcamps -%}{%- for item in collection -%}<div role="listitem" class="w-dyn-item">
+          <div class="project-block-2"><img loading="lazy" src="{{ item.data.icon }}" alt="" class="image-11">
+            <h1 class="heading-8">{{ item.data.title }}</h1>
+            <h1 class="heading-8 snall">{{ item.data.date-range }}</h1>
+            <p class="paragraph-3">{{ item.data.description }}</p><a href="{{ item.data.current-bootcamp }}" class="button-invert w-button"><strong class="bold-text-2">Learn More ➔</strong></a><a href="{{ item.data.register-link }}" class="button-invert black w-button"><strong class="bold-text-5">Apply</strong></a></div>
+        </div>{%- endfor -%}
       </div>
-      <div class="w-dyn-empty">
-        <div>No items found.</div>
-      </div>
+      
     </div>
   </div>
   <div id="footer" class="footer-01">

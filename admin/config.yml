@@ -180,6 +180,12 @@
           ]
         },
         {
+          "name": "announcement",
+          "label": "Announcement",
+          "widget": "text",
+          "required": false
+        },
+        {
           "label": "Body",
           "name": "body",
           "widget": "markdown",
@@ -273,6 +279,171 @@
               "required": false
             }
           ]
+        },
+        {
+          "name": "datetime",
+          "label": "Datetime",
+          "widget": "text",
+          "required": false
+        },
+        {
+          "name": "description",
+          "label": "Description",
+          "widget": "text",
+          "required": false
+        },
+        {
+          "name": "icon",
+          "label": "Icon",
+          "widget": "image",
+          "required": false,
+          "media_library": {
+            "config": {
+              "multiple": false
+            }
+          }
+        },
+        {
+          "name": "current-event",
+          "label": "Current event (URL)",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "name": "rsvp-link",
+          "label": "Rsvp link (URL)",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "label": "Body",
+          "name": "body",
+          "widget": "markdown",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "bootcamps",
+      "label": "Bootcamps",
+      "folder": "site/bootcamps",
+      "create": true,
+      "slug": "{{slug}}",
+      "editor": {
+        "preview": false
+      },
+      "fields": [
+        {
+          "label": "Title",
+          "name": "title",
+          "widget": "string"
+        },
+        {
+          "label": "Tags",
+          "widget": "hidden",
+          "name": "tags",
+          "default": "bootcamps"
+        },
+        {
+          "label": "Publish Date",
+          "name": "date",
+          "widget": "datetime"
+        },
+        {
+          "label": "Layout",
+          "widget": "hidden",
+          "name": "layout",
+          "default": "single-bootcamps.html"
+        },
+        {
+          "label": "Seo",
+          "name": "seo",
+          "widget": "object",
+          "fields": [
+            {
+              "label": "Title",
+              "name": "title",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Description",
+              "name": "description",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Open Graph Image",
+              "name": "og:image",
+              "widget": "image",
+              "required": false,
+              "media_library": {
+                "config": {
+                  "multiple": false
+                }
+              }
+            },
+            {
+              "label": "Twitter Card",
+              "name": "twitter:card",
+              "widget": "string",
+              "default": "summary",
+              "required": false
+            },
+            {
+              "label": "Twitter Site",
+              "name": "twitter:site",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Twitter Creator",
+              "name": "twitter:creator",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Additional HTML tags",
+              "name": "additional_tags",
+              "widget": "text",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "date-range",
+          "label": "Date range",
+          "widget": "text",
+          "required": false
+        },
+        {
+          "name": "description",
+          "label": "Description",
+          "widget": "text",
+          "required": false
+        },
+        {
+          "name": "icon",
+          "label": "Icon",
+          "widget": "image",
+          "required": false,
+          "media_library": {
+            "config": {
+              "multiple": false
+            }
+          }
+        },
+        {
+          "name": "current-bootcamp",
+          "label": "Current bootcamp (URL)",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "name": "register-link",
+          "label": "Register link (URL)",
+          "widget": "string",
+          "required": false
         },
         {
           "label": "Body",
