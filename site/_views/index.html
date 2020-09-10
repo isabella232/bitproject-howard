@@ -27,7 +27,7 @@
       <nav class="w-container">
         <ul role="list" class="nav-grid w-list-unstyled">
           <li id="w-node-c87e5db0a3e3-5db0a3e0">
-            <a href="#" class="nav-logo-link w-inline-block">
+            <a href="/" aria-current="page" class="nav-logo-link w-inline-block w--current">
               <h1 class="heading-3 white">Bit Project<br><span class="text-span">@Howard</span></h1>
             </a>
           </li>
@@ -43,7 +43,7 @@
         <h1 class="heading-15"><strong>Creating Global Tech Community</strong></h1>
         <p class="paragraph-2 top">Empowering all students with the tools to learn technologies, educate their community, and contribute to open source technical projects.</p>
         <div class="div-block-5 left"><a href="#" class="button-2 w-button"><strong class="bold-text-3">Contribute ➔</strong></a></div>
-      </div><picture class="lazyload"><source type="image/webp" srcset="/static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-500.png.webp 500w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-800.png.webp 800w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1080.png.webp 1080w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1600.png.webp 1600w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right.png.webp 1658w" sizes="(max-width: 767px) 50vw, (max-width: 991px) 47vw, 470px"><img loading="lazy" srcset="/static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-500.png 500w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-800.png 800w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1080.png 1080w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1600.png 1600w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right.png 1658w" sizes="(max-width: 767px) 50vw, (max-width: 991px) 47vw, 470px" alt="" class="image-28 lazyload" data-src="/static/images/5f306b8ef273cf393ba00e6e_hero-photos-right.png"></picture></div>
+      </div><picture class="lazyload"><source type="image/webp" srcset="/static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-500.png.webp 500w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-800.png.webp 800w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1080.png.webp 1080w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1600.png.webp 1600w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right.png.webp 1658w" sizes="(max-width: 767px) 80vw, (max-width: 991px) 76vw, 470.0000305175781px"><img loading="lazy" srcset="/static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-500.png 500w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-800.png 800w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1080.png 1080w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1600.png 1600w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right.png 1658w" sizes="(max-width: 767px) 80vw, (max-width: 991px) 76vw, 470.0000305175781px" alt="" class="image-28 lazyload" data-src="/static/images/5f306b8ef273cf393ba00e6e_hero-photos-right.png"></picture></div>
   </div>
   <header id="about" class="hero-2 grey">
     <div class="flex-container-5 w-container">
@@ -81,18 +81,18 @@
       </div>
     </div>
   </header>
-  <div id="events" class="section-3">
+  <div id="events">
     <div class="hero-block-2 wide w-container">
       <h1 class="heading-17">Events</h1>
       <p class="paragraph-2 small">We host a variety of events, from technical workshops building amazing apps, to networking sessions with Industry.</p>
     </div>
     <div class="collection-list-wrapper-3 w-dyn-list">
       <div role="list" class="collection-list-3 w-dyn-items">
-        {%- assign collection = collections.events -%}{%- for item in collection -%}<div role="listitem" class="w-dyn-item">
+        {%- assign collection = collections.events -%}{%- for item in collection -%}<div role="listitem" class="collection-item-4 w-dyn-item">
           <div class="project-block"><img loading="lazy" src="{{ item.data.icon }}" alt="" class="image-11">
             <h2 class="heading-8">{{ item.data.title }}</h2>
             <h1 class="heading-8 snall">{{ item.data.datetime }}</h1>
-            <p class="paragraph-3">{{ item.data.description }}</p><a href="{{ item.data.current-event }}" class="button-invert small w-button"><strong class="bold-text">Learn More ➔</strong></a><a href="{{ item.data.rsvp-link }}" class="button-invert black w-button"><strong class="bold-text">RSVP</strong></a></div>
+            <p class="paragraph-3">{{ item.data.description }}</p><a href="{{ item.data.slug }}" class="button-invert small w-button"><strong class="bold-text">Learn More ➔</strong></a><a href="{{ item.data.rsvp-link }}" class="button-invert black w-button"><strong class="bold-text">RSVP</strong></a></div>
         </div>{%- endfor -%}
       </div>
       
@@ -109,7 +109,7 @@
           <div class="project-block-2"><img loading="lazy" src="{{ item.data.icon }}" alt="" class="image-11">
             <h1 class="heading-8">{{ item.data.title }}</h1>
             <h1 class="heading-8 snall">{{ item.data.date-range }}</h1>
-            <p class="paragraph-3">{{ item.data.description }}</p><a href="{{ item.data.current-bootcamp }}" class="button-invert w-button"><strong class="bold-text-2">Learn More ➔</strong></a><a href="{{ item.data.register-link }}" class="button-invert black w-button"><strong class="bold-text-5">Apply</strong></a></div>
+            <p class="paragraph-3">{{ item.data.description }}</p><a href="{{ item.data.slug }}" class="button-invert w-button"><strong class="bold-text-2">Learn More ➔</strong></a><a href="{{ item.data.register-link }}" class="button-invert black w-button"><strong class="bold-text-5">Apply</strong></a></div>
         </div>{%- endfor -%}
       </div>
       

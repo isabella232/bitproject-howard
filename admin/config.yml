@@ -304,8 +304,8 @@
           }
         },
         {
-          "name": "current-event",
-          "label": "Current event (URL)",
+          "name": "slug",
+          "label": "Slug (URL)",
           "widget": "string",
           "required": false
         },
@@ -434,8 +434,8 @@
           }
         },
         {
-          "name": "current-bootcamp",
-          "label": "Current bootcamp (URL)",
+          "name": "slug",
+          "label": "Slug (URL)",
           "widget": "string",
           "required": false
         },

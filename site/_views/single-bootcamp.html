@@ -14,12 +14,20 @@
   <link href="/static/images/webclip.png" rel="apple-touch-icon">
 </head>
 <body>
+  <div class="section-2">
+    <div class="w-dyn-list">
+      <div role="list" class="w-dyn-items">
+        {%- assign collection = collections.announcements -%}{%- for item in collection -%}<div role="listitem" class="collection-item w-dyn-item"><a url="link" href="#" class="link">{{ item.data.announcement }}</a></div>{%- endfor -%}
+      </div>
+      
+    </div>
+  </div>
   <div class="section">
     <header id="nav" class="sticky-nav">
       <nav class="w-container">
         <ul role="list" class="nav-grid w-list-unstyled">
           <li id="w-node-c87e5db0a3e3-5db0a3e0">
-            <a href="#" class="nav-logo-link w-inline-block">
+            <a href="/" class="nav-logo-link w-inline-block">
               <h1 class="heading-3 white">Bit Project<br><span class="text-span">@Howard</span></h1>
             </a>
           </li>
@@ -34,7 +42,7 @@
       <div class="div-block-20">
         <h1 class="heading-15"></h1>
         <p class="paragraph-2 top"></p>
-        <div class="div-block-5 left date"><a href="#" class="button-2 w-button"><strong>Apply Now -&gt;</strong></a>
+        <div class="div-block-5 left date"><a href="#" class="button-2 w-button"><strong class="bold-text-6">Apply Now -&gt;</strong></a>
           <div class="text-block-2"></div>
         </div>
       </div><picture class="lazyload"><source type="image/webp" srcset="/static/.webp"><img loading="lazy" alt="" class="image-28 lazyload" data-src="/static/"></picture></div>
@@ -57,6 +65,48 @@
         </div>
       </div>
       <div class="rich-text-block w-richtext"></div>
+    </div>
+  </div>
+  <div id="footer" class="footer-01">
+    <div class="container">
+      <div class="footer-top"><img src="/static/images/Icon-Logo.svg" width="64" alt="" class="footer-logo">
+        <div class="footer-wrapper">
+          <div class="footer-title-button">Passionate about Open Source Education?</div><a href="#" class="button-3 w-button"><strong>Join The Family ➔</strong></a></div>
+      </div>
+      <div class="w-layout-grid footer-grid-01">
+        <div id="w-node-b7470bdbd4d5-8c98b6ff" class="footer-column">
+          <div class="footer-title-button">Subscribe to our newsletter ➔</div>
+          <div class="form-block w-form">
+            <form id="email-form" name="email-form" data-name="Email Form" class="form"><input type="email" class="text-field w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Email Address" id="email-2" required=""></form>
+            <div class="w-form-done">
+              <div>Thank you! Your submission has been received!</div>
+            </div>
+            <div class="w-form-fail">
+              <div>Oops! Something went wrong while submitting the form.</div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-column">
+          <div class="footer-title">Programs</div><a href="#" class="footer-link">Bit University</a><a href="#" class="footer-link">BitCamp</a><a href="#" class="footer-link">Workshops</a><a href="#" class="footer-link">Outreach</a></div>
+        <div id="w-node-b7470bdbd4ec-8c98b6ff" class="footer-column">
+          <div class="footer-title">About Us</div><a href="#" class="footer-link">About Us</a><a href="#" class="footer-link">Join the Team</a><a href="https://dev.to/bitproject" class="footer-link">Blog &amp;&nbsp;News</a></div>
+        <div class="footer-column">
+          <div class="footer-title">Help</div><a href="mailto:info@bitproject.org" class="footer-link">Contact Us</a><a href="#" class="footer-link">Donate</a></div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-wrapper"><a href="#" class="secondary-link">Bit Project is a 501(c)(3) Nonprofit EIN84-2528709</a><a href="#" class="secondary-link">Terms &amp; Conditions</a><a href="#" class="footer-link">Privacy Policy</a></div>
+        <div class="footer-wrapper">
+          <a href="http://facebook.com/bitproject.org" class="social-link w-inline-block">
+            <div data-w-id="7ded7a24-0bfd-31cd-05d3-b7470bdbd506" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5f246891a87fe01d99b10cfb/5f273e770311fc30c8047827_lottieflow-social-networks-15-4-ffffff-easey.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="1.4833333333333334" data-duration="0"></div>
+          </a>
+          <a href="http://twitter.com/bitprj" class="social-link w-inline-block">
+            <div data-w-id="7ded7a24-0bfd-31cd-05d3-b7470bdbd508" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5f246891a87fe01d99b10cfb/5f273e487cfa44708bed3bd0_lottieflow-social-networks-15-10-ffffff-easey.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0" class="lottie-animation-5"></div>
+          </a>
+          <a href="http://instagram.com/bitprojectorg" class="social-link w-inline-block">
+            <div data-w-id="7ded7a24-0bfd-31cd-05d3-b7470bdbd50a" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5f246891a87fe01d99b10cfb/5f273e9cccdebbe0ab700d0e_lottieflow-social-networks-15-5-ffffff-easey.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="1.1833333333333333" data-duration="0" class="lottie-animation-6"></div>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" type="text/javascript" crossorigin="anonymous"></script>
