@@ -1,0 +1,476 @@
+{
+  "backend": {
+    "name": "git-gateway",
+    "accept_roles": [
+      "admin",
+      "editor"
+    ]
+  },
+  "media_folder": "static/images/uploads",
+  "collections": [
+    {
+      "name": "pages",
+      "label": "Pages",
+      "folder": "site/pages",
+      "create": false,
+      "delete": false,
+      "slug": "{{slug}}",
+      "editor": {
+        "preview": false
+      },
+      "fields": [
+        {
+          "label": "Title",
+          "name": "title",
+          "widget": "string"
+        },
+        {
+          "label": "Publish Date",
+          "name": "date",
+          "widget": "datetime"
+        },
+        {
+          "label": "Layout",
+          "widget": "hidden",
+          "name": "layout",
+          "default": "{{slug}}.html"
+        },
+        {
+          "label": "Seo",
+          "name": "seo",
+          "widget": "object",
+          "fields": [
+            {
+              "label": "Title",
+              "name": "title",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Description",
+              "name": "description",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Open Graph Image",
+              "name": "og:image",
+              "widget": "image",
+              "required": false,
+              "media_library": {
+                "config": {
+                  "multiple": false
+                }
+              }
+            },
+            {
+              "label": "Twitter Card",
+              "name": "twitter:card",
+              "widget": "string",
+              "default": "summary",
+              "required": false
+            },
+            {
+              "label": "Twitter Site",
+              "name": "twitter:site",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Twitter Creator",
+              "name": "twitter:creator",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Additional HTML tags",
+              "name": "additional_tags",
+              "widget": "text",
+              "required": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "announcements",
+      "label": "Announcements",
+      "folder": "site/announcements",
+      "create": true,
+      "slug": "{{slug}}",
+      "editor": {
+        "preview": false
+      },
+      "fields": [
+        {
+          "label": "Title",
+          "name": "title",
+          "widget": "string"
+        },
+        {
+          "label": "Tags",
+          "widget": "hidden",
+          "name": "tags",
+          "default": "announcements"
+        },
+        {
+          "label": "Publish Date",
+          "name": "date",
+          "widget": "datetime"
+        },
+        {
+          "label": "Layout",
+          "widget": "hidden",
+          "name": "layout",
+          "default": "single-announcements.html"
+        },
+        {
+          "label": "Seo",
+          "name": "seo",
+          "widget": "object",
+          "fields": [
+            {
+              "label": "Title",
+              "name": "title",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Description",
+              "name": "description",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Open Graph Image",
+              "name": "og:image",
+              "widget": "image",
+              "required": false,
+              "media_library": {
+                "config": {
+                  "multiple": false
+                }
+              }
+            },
+            {
+              "label": "Twitter Card",
+              "name": "twitter:card",
+              "widget": "string",
+              "default": "summary",
+              "required": false
+            },
+            {
+              "label": "Twitter Site",
+              "name": "twitter:site",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Twitter Creator",
+              "name": "twitter:creator",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Additional HTML tags",
+              "name": "additional_tags",
+              "widget": "text",
+              "required": false
+            }
+          ]
+        },
+        {
+          "label": "Body",
+          "name": "body",
+          "widget": "markdown",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "events",
+      "label": "Events",
+      "folder": "site/events",
+      "create": true,
+      "slug": "{{slug}}",
+      "editor": {
+        "preview": false
+      },
+      "fields": [
+        {
+          "label": "Title",
+          "name": "title",
+          "widget": "string"
+        },
+        {
+          "label": "Tags",
+          "widget": "hidden",
+          "name": "tags",
+          "default": "events"
+        },
+        {
+          "label": "Publish Date",
+          "name": "date",
+          "widget": "datetime"
+        },
+        {
+          "label": "Layout",
+          "widget": "hidden",
+          "name": "layout",
+          "default": "single-events.html"
+        },
+        {
+          "label": "Seo",
+          "name": "seo",
+          "widget": "object",
+          "fields": [
+            {
+              "label": "Title",
+              "name": "title",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Description",
+              "name": "description",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Open Graph Image",
+              "name": "og:image",
+              "widget": "image",
+              "required": false,
+              "media_library": {
+                "config": {
+                  "multiple": false
+                }
+              }
+            },
+            {
+              "label": "Twitter Card",
+              "name": "twitter:card",
+              "widget": "string",
+              "default": "summary",
+              "required": false
+            },
+            {
+              "label": "Twitter Site",
+              "name": "twitter:site",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Twitter Creator",
+              "name": "twitter:creator",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Additional HTML tags",
+              "name": "additional_tags",
+              "widget": "text",
+              "required": false
+            }
+          ]
+        },
+        {
+          "label": "Body",
+          "name": "body",
+          "widget": "markdown",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "people",
+      "label": "People",
+      "folder": "site/people",
+      "create": true,
+      "slug": "{{slug}}",
+      "editor": {
+        "preview": false
+      },
+      "fields": [
+        {
+          "label": "Title",
+          "name": "title",
+          "widget": "string"
+        },
+        {
+          "label": "Tags",
+          "widget": "hidden",
+          "name": "tags",
+          "default": "people"
+        },
+        {
+          "label": "Publish Date",
+          "name": "date",
+          "widget": "datetime"
+        },
+        {
+          "label": "Layout",
+          "widget": "hidden",
+          "name": "layout",
+          "default": "single-people.html"
+        },
+        {
+          "label": "Seo",
+          "name": "seo",
+          "widget": "object",
+          "fields": [
+            {
+              "label": "Title",
+              "name": "title",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Description",
+              "name": "description",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Open Graph Image",
+              "name": "og:image",
+              "widget": "image",
+              "required": false,
+              "media_library": {
+                "config": {
+                  "multiple": false
+                }
+              }
+            },
+            {
+              "label": "Twitter Card",
+              "name": "twitter:card",
+              "widget": "string",
+              "default": "summary",
+              "required": false
+            },
+            {
+              "label": "Twitter Site",
+              "name": "twitter:site",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Twitter Creator",
+              "name": "twitter:creator",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Additional HTML tags",
+              "name": "additional_tags",
+              "widget": "text",
+              "required": false
+            }
+          ]
+        },
+        {
+          "label": "Body",
+          "name": "body",
+          "widget": "markdown",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "bootcamp",
+      "label": "Bootcamp",
+      "folder": "site/bootcamp",
+      "create": true,
+      "slug": "{{slug}}",
+      "editor": {
+        "preview": false
+      },
+      "fields": [
+        {
+          "label": "Title",
+          "name": "title",
+          "widget": "string"
+        },
+        {
+          "label": "Tags",
+          "widget": "hidden",
+          "name": "tags",
+          "default": "bootcamp"
+        },
+        {
+          "label": "Publish Date",
+          "name": "date",
+          "widget": "datetime"
+        },
+        {
+          "label": "Layout",
+          "widget": "hidden",
+          "name": "layout",
+          "default": "single-bootcamp.html"
+        },
+        {
+          "label": "Seo",
+          "name": "seo",
+          "widget": "object",
+          "fields": [
+            {
+              "label": "Title",
+              "name": "title",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Description",
+              "name": "description",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Open Graph Image",
+              "name": "og:image",
+              "widget": "image",
+              "required": false,
+              "media_library": {
+                "config": {
+                  "multiple": false
+                }
+              }
+            },
+            {
+              "label": "Twitter Card",
+              "name": "twitter:card",
+              "widget": "string",
+              "default": "summary",
+              "required": false
+            },
+            {
+              "label": "Twitter Site",
+              "name": "twitter:site",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Twitter Creator",
+              "name": "twitter:creator",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Additional HTML tags",
+              "name": "additional_tags",
+              "widget": "text",
+              "required": false
+            }
+          ]
+        },
+        {
+          "label": "Body",
+          "name": "body",
+          "widget": "markdown",
+          "required": false
+        }
+      ]
+    }
+  ]
+}
