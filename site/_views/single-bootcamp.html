@@ -56,7 +56,7 @@
         <div>
           <div class="w-dyn-list">
             <div role="list" class="w-dyn-items">
-              {%- assign collection = collections.people -%}{%- for item in collection -%}<div role="listitem" class="collection-item-3 w-dyn-item"><a url="Twitter" href="#" class="div-block-15 w-inline-block"><picture class="lazyload"><source type="image/webp" srcset="/static/.webp"><img loading="lazy" alt="" class="image-23 lazyload" data-src="/static/"></picture><div class="heading-10"></div></a></div>{%- endfor -%}
+              {%- assign collection = collections.people -%}{%- for item in collection -%}{%- assign references = collections.people | filterBy: people,'fileSlug' -%}{%- for ref in references -%}<div role="listitem" class="collection-item-3 w-dyn-item"><a url="Twitter" href="#" class="div-block-15 w-inline-block"><img loading="lazy" src="{{ item.data.profile }}" alt="" class="image-23"><div class="heading-10"></div></a></div>{%- endfor -%}{%- endfor -%}
             </div>
             
           </div>

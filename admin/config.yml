@@ -541,6 +541,17 @@
           ]
         },
         {
+          "name": "profile",
+          "label": "Profile",
+          "widget": "image",
+          "required": false,
+          "media_library": {
+            "config": {
+              "multiple": false
+            }
+          }
+        },
+        {
           "label": "Body",
           "name": "body",
           "widget": "markdown",
@@ -634,6 +645,21 @@
               "required": false
             }
           ]
+        },
+        {
+          "name": "people",
+          "label": "People",
+          "widget": "relation",
+          "collection": "people",
+          "searchFields": [
+            "title"
+          ],
+          "valueField": "slug",
+          "displayFields": [
+            "title"
+          ],
+          "multiple": true,
+          "required": false
         },
         {
           "name": "description",
