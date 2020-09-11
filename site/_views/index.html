@@ -92,7 +92,7 @@
           <div class="project-block"><img loading="lazy" src="{{ item.data.icon }}" alt="" class="image-11">
             <h2 class="heading-8">{{ item.data.title }}</h2>
             <h1 class="heading-8 snall">{{ item.data.datetime }}</h1>
-            <p class="paragraph-3">{{ item.data.description }}</p><a href="{{ item.data.learn-link }}" class="button-invert small w-button"><strong class="bold-text">Learn More ➔</strong></a><a href="{{ item.data.rsvp-link }}" class="button-invert black w-button"><strong class="bold-text">RSVP</strong></a></div>
+            <p class="paragraph-3">{{ item.data.description }}</p><a href="{{ item.url }}" class="button-invert small w-button"><strong class="bold-text">Learn More ➔</strong></a><a href="{{ item.data.rsvp-link }}" class="button-invert black w-button"><strong class="bold-text">RSVP</strong></a></div>
         </div>{%- endfor -%}
       </div>
       
@@ -109,7 +109,7 @@
           <div class="project-block-2"><img loading="lazy" src="{{ item.data.icon }}" alt="" class="image-11">
             <h1 class="heading-8">{{ item.data.title }}</h1>
             <h1 class="heading-8 snall">{{ item.data.date-range }}</h1>
-            <p class="paragraph-3">{{ item.data.description }}</p><a href="{{ item.data.learn-link }}" class="button-invert w-button"><strong class="bold-text-2">Learn More ➔</strong></a><a href="{{ item.data.register-link }}" class="button-invert black w-button"><strong class="bold-text-5">Apply</strong></a></div>
+            <p class="paragraph-3">{{ item.data.description }}</p><a href="{{ item.url }}" class="button-invert w-button"><strong class="bold-text-2">Learn More ➔</strong></a><a href="{{ item.data.register-link }}" class="button-invert black w-button"><strong class="bold-text-5">Apply</strong></a></div>
         </div>{%- endfor -%}
       </div>
       

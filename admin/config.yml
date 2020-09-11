@@ -304,12 +304,6 @@
           }
         },
         {
-          "name": "learn-link",
-          "label": "Learn link (URL)",
-          "widget": "string",
-          "required": false
-        },
-        {
           "name": "rsvp-link",
           "label": "Rsvp link (URL)",
           "widget": "string",
@@ -432,12 +426,6 @@
               "multiple": false
             }
           }
-        },
-        {
-          "name": "learn-link",
-          "label": "Learn link (URL)",
-          "widget": "string",
-          "required": false
         },
         {
           "name": "register-link",
