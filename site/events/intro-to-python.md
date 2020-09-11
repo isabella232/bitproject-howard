@@ -8,7 +8,7 @@ seo:
 datetime: 9/13/20
 description: adsfsadsf
 icon: /static/images/uploads/bit-heros-network.svg
-rsvp-link: adsfsadsf.org
+rsvp-link: https://adsfsadsf.org
 featured-image: /static/images/uploads/bit-heros-network.svg
 ---
 adsfsadsfadsfsadsfadsfsadsfadsfsadsf
