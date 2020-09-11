@@ -304,8 +304,8 @@
           }
         },
         {
-          "name": "slug",
-          "label": "Slug (URL)",
+          "name": "learn-link",
+          "label": "Learn link (URL)",
           "widget": "string",
           "required": false
         },
@@ -434,8 +434,8 @@
           }
         },
         {
-          "name": "slug",
-          "label": "Slug (URL)",
+          "name": "learn-link",
+          "label": "Learn link (URL)",
           "widget": "string",
           "required": false
         },
@@ -634,6 +634,40 @@
               "required": false
             }
           ]
+        },
+        {
+          "name": "description",
+          "label": "Description",
+          "widget": "text",
+          "required": false
+        },
+        {
+          "name": "date-range",
+          "label": "Date range",
+          "widget": "text",
+          "required": false
+        },
+        {
+          "name": "featured-image",
+          "label": "Featured image",
+          "widget": "image",
+          "required": false,
+          "media_library": {
+            "config": {
+              "multiple": false
+            }
+          }
+        },
+        {
+          "name": "icon",
+          "label": "Icon",
+          "widget": "image",
+          "required": false,
+          "media_library": {
+            "config": {
+              "multiple": false
+            }
+          }
         },
         {
           "label": "Body",

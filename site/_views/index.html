@@ -43,7 +43,7 @@
         <h1 class="heading-15"><strong>Creating Global Tech Community</strong></h1>
         <p class="paragraph-2 top">Empowering all students with the tools to learn technologies, educate their community, and contribute to open source technical projects.</p>
         <div class="div-block-5 left"><a href="#" class="button-2 w-button"><strong class="bold-text-3">Contribute ➔</strong></a></div>
-      </div><picture class="lazyload"><source type="image/webp" srcset="/static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-500.png.webp 500w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-800.png.webp 800w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1080.png.webp 1080w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1600.png.webp 1600w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right.png.webp 1658w" sizes="(max-width: 767px) 80vw, (max-width: 991px) 76vw, 470.0000305175781px"><img loading="lazy" srcset="/static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-500.png 500w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-800.png 800w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1080.png 1080w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1600.png 1600w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right.png 1658w" sizes="(max-width: 767px) 80vw, (max-width: 991px) 76vw, 470.0000305175781px" alt="" class="image-28 lazyload" data-src="/static/images/5f306b8ef273cf393ba00e6e_hero-photos-right.png"></picture></div>
+      </div><picture class="lazyload"><source type="image/webp" srcset="/static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-500.png.webp 500w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-800.png.webp 800w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1080.png.webp 1080w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1600.png.webp 1600w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right.png.webp 1658w" sizes="(max-width: 767px) 80vw, (max-width: 991px) 76vw, 470px"><img loading="lazy" srcset="/static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-500.png 500w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-800.png 800w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1080.png 1080w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1600.png 1600w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right.png 1658w" sizes="(max-width: 767px) 80vw, (max-width: 991px) 76vw, 470px" alt="" class="image-28 lazyload" data-src="/static/images/5f306b8ef273cf393ba00e6e_hero-photos-right.png"></picture></div>
   </div>
   <header id="about" class="hero-2 grey">
     <div class="flex-container-5 w-container">
@@ -92,7 +92,7 @@
           <div class="project-block"><img loading="lazy" src="{{ item.data.icon }}" alt="" class="image-11">
             <h2 class="heading-8">{{ item.data.title }}</h2>
             <h1 class="heading-8 snall">{{ item.data.datetime }}</h1>
-            <p class="paragraph-3">{{ item.data.description }}</p><a href="{{ item.data.slug }}" class="button-invert small w-button"><strong class="bold-text">Learn More ➔</strong></a><a href="{{ item.data.rsvp-link }}" class="button-invert black w-button"><strong class="bold-text">RSVP</strong></a></div>
+            <p class="paragraph-3">{{ item.data.description }}</p><a href="{{ item.data.learn-link }}" class="button-invert small w-button"><strong class="bold-text">Learn More ➔</strong></a><a href="{{ item.data.rsvp-link }}" class="button-invert black w-button"><strong class="bold-text">RSVP</strong></a></div>
         </div>{%- endfor -%}
       </div>
       
@@ -109,7 +109,7 @@
           <div class="project-block-2"><img loading="lazy" src="{{ item.data.icon }}" alt="" class="image-11">
             <h1 class="heading-8">{{ item.data.title }}</h1>
             <h1 class="heading-8 snall">{{ item.data.date-range }}</h1>
-            <p class="paragraph-3">{{ item.data.description }}</p><a href="{{ item.data.slug }}" class="button-invert w-button"><strong class="bold-text-2">Learn More ➔</strong></a><a href="{{ item.data.register-link }}" class="button-invert black w-button"><strong class="bold-text-5">Apply</strong></a></div>
+            <p class="paragraph-3">{{ item.data.description }}</p><a href="{{ item.data.learn-link }}" class="button-invert w-button"><strong class="bold-text-2">Learn More ➔</strong></a><a href="{{ item.data.register-link }}" class="button-invert black w-button"><strong class="bold-text-5">Apply</strong></a></div>
         </div>{%- endfor -%}
       </div>
       
@@ -119,7 +119,7 @@
     <div class="container">
       <div class="footer-top"><img src="/static/images/Icon-Logo.svg" width="64" alt="" class="footer-logo">
         <div class="footer-wrapper">
-          <div class="footer-title-button">Passionate about Open Source Education?</div><a href="#" class="button-3 w-button"><strong>Join The Family ➔</strong></a></div>
+          <div class="footer-title-button">Passionate about Open Source Education?</div><a href="http://join.bitproject.org" target="_blank" class="button-3 w-button"><strong>Join The Family ➔</strong></a></div>
       </div>
       <div class="w-layout-grid footer-grid-01">
         <div id="w-node-b3008fa11326-dc101b37" class="footer-column">

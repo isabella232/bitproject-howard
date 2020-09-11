@@ -40,31 +40,29 @@
     </header>
     <div class="flex-container-4 w-container">
       <div class="div-block-20">
-        <h1 class="heading-15"></h1>
-        <p class="paragraph-2 top"></p>
-        <div class="div-block-5 left date"><a href="#" class="button-2 w-button"><strong class="bold-text-6">Apply Now -&gt;</strong></a>
-          <div class="text-block-2"></div>
+        <h1 class="heading-15">{{ title }}</h1>
+        <p class="paragraph-2 top">{{ description }}</p>
+        <div class="div-block-5 left date"><a url="Register Link" href="#" class="button-2 w-button"><strong class="bold-text-6">Apply Now -&gt;</strong></a>
+          <div class="text-block-2">{{ date-range }}</div>
         </div>
-      </div><picture class="lazyload"><source type="image/webp" srcset="/static/.webp"><img loading="lazy" alt="" class="image-28 lazyload" data-src="/static/"></picture></div>
+      </div><img loading="lazy" src="{{ featured-image }}" alt="" class="image-28"></div>
   </div>
   <div class="section-8">
     <div class="w-layout-grid product5-grid">
-      <div id="w-node-5ea872d9485c-8c98b6ff" class="home-sections-label"><picture class="lazyload"><source type="image/webp" srcset="/static/.webp"><img alt="" class="icon lazyload" data-src="/static/"></picture>
-        <div class="heading-19"></div>
-        <p class="paragraph-2 high small left"></p>
+      <div id="w-node-5ea872d9485c-8c98b6ff" class="home-sections-label"><img src="{{ icon }}" alt="" class="icon">
+        <div class="heading-19">{{ title }}</div>
+        <p class="paragraph-2 high small left">{{ description }}</p>
         <p class="paragraph-2 high small bold left"><strong>Contributors</strong></p>
         <div>
           <div class="w-dyn-list">
             <div role="list" class="w-dyn-items">
-              <div role="listitem" class="collection-item-3 w-dyn-item"><a href="#" class="div-block-15 w-inline-block"><picture class="lazyload"><source type="image/webp" srcset="/static/.webp"><img loading="lazy" alt="" class="image-23 lazyload" data-src="/static/"></picture><div class="heading-10"></div></a></div>
+              {%- assign collection = collections.people -%}{%- for item in collection -%}<div role="listitem" class="collection-item-3 w-dyn-item"><a url="Twitter" href="#" class="div-block-15 w-inline-block"><picture class="lazyload"><source type="image/webp" srcset="/static/.webp"><img loading="lazy" alt="" class="image-23 lazyload" data-src="/static/"></picture><div class="heading-10"></div></a></div>{%- endfor -%}
             </div>
-            <div class="w-dyn-empty">
-              <div>No items found.</div>
-            </div>
+            
           </div>
         </div>
       </div>
-      <div class="rich-text-block w-richtext"></div>
+      <div class="rich-text-block w-richtext">{{ content }}</div>
     </div>
   </div>
   <div id="footer" class="footer-01">
