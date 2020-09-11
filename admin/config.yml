@@ -310,6 +310,17 @@
           "required": false
         },
         {
+          "name": "featured-image",
+          "label": "Featured image",
+          "widget": "image",
+          "required": false,
+          "media_library": {
+            "config": {
+              "multiple": false
+            }
+          }
+        },
+        {
           "label": "Body",
           "name": "body",
           "widget": "markdown",
