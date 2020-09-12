@@ -108,7 +108,7 @@
         {%- assign collection = collections.bootcamps -%}{%- for item in collection -%}<div role="listitem" class="w-dyn-item">
           <div class="project-block-2"><img loading="lazy" src="{{ item.data.icon }}" alt="" class="image-11">
             <h1 class="heading-8">{{ item.data.title }}</h1>
-            <h1 class="heading-8 snall">{{ item.data.date-range }}</h1>
+            <h1 class="heading-8 snall">{{ item.data.daterange }}</h1>
             <p class="paragraph-3">{{ item.data.description }}</p><a href="{{ item.url }}" class="button-invert w-button"><strong class="bold-text-2">Learn More ➔</strong></a><a href="{{ item.data.register-link }}" class="button-invert black w-button"><strong class="bold-text-5">Apply</strong></a></div>
         </div>{%- endfor -%}
       </div>

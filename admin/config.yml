@@ -422,7 +422,7 @@
           ]
         },
         {
-          "name": "date-range",
+          "name": "daterange",
           "label": "Date range",
           "widget": "text",
           "required": false
@@ -641,7 +641,7 @@
           ]
         },
         {
-          "name": "date-range",
+          "name": "daterange",
           "label": "Date range",
           "widget": "text",
           "required": false
