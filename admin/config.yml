@@ -186,6 +186,12 @@
           "required": false
         },
         {
+          "name": "link",
+          "label": "Link (URL)",
+          "widget": "string",
+          "required": false
+        },
+        {
           "label": "Body",
           "name": "body",
           "widget": "markdown",
@@ -635,14 +641,14 @@
           ]
         },
         {
-          "name": "description",
-          "label": "Description",
+          "name": "date-range",
+          "label": "Date range",
           "widget": "text",
           "required": false
         },
         {
-          "name": "date-range",
-          "label": "Date range",
+          "name": "description",
+          "label": "Description",
           "widget": "text",
           "required": false
         },
@@ -660,6 +666,17 @@
         {
           "name": "icon",
           "label": "Icon",
+          "widget": "image",
+          "required": false,
+          "media_library": {
+            "config": {
+              "multiple": false
+            }
+          }
+        },
+        {
+          "name": "name",
+          "label": "Name",
           "widget": "image",
           "required": false,
           "media_library": {

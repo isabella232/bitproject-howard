@@ -17,7 +17,7 @@
   <div class="section-2">
     <div class="w-dyn-list">
       <div role="list" class="w-dyn-items">
-        {%- assign collection = collections.announcements -%}{%- for item in collection -%}<div role="listitem" class="collection-item w-dyn-item"><a url="link" href="#" class="link">{{ item.data.announcement }}</a></div>{%- endfor -%}
+        {%- assign collection = collections.announcements -%}{%- for item in collection -%}<div role="listitem" class="collection-item w-dyn-item"><a href="{{ item.data.link }}" class="link">{{ item.data.announcement }}</a></div>{%- endfor -%}
       </div>
       
     </div>
