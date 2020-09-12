@@ -653,17 +653,6 @@
           "required": false
         },
         {
-          "name": "featured-image",
-          "label": "Featured image",
-          "widget": "image",
-          "required": false,
-          "media_library": {
-            "config": {
-              "multiple": false
-            }
-          }
-        },
-        {
           "name": "icon",
           "label": "Icon",
           "widget": "image",
