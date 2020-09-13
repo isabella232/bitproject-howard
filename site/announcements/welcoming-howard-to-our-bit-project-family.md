@@ -7,3 +7,4 @@ seo:
   twitter:card: summary
 announcement: Welcoming Howard to our Bit Project Family!
 ---
+Welcoming Howard to our Bit Project Family!
