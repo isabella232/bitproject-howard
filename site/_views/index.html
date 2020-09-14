@@ -17,7 +17,7 @@
   <div class="section-2">
     <div class="w-dyn-list">
       <div role="list" class="w-dyn-items">
-        {%- assign collection = collections.announcements -%}{%- for item in collection -%}<div role="listitem" class="collection-item w-dyn-item"><a href="{{ item.data.link }}" class="link">{{ item.data.announcement }}</a></div>{%- endfor -%}
+        {%- assign collection = collections.announcements -%}{%- for item in collection -%}<div role="listitem" class="collection-item w-dyn-item"><a href="{{ item.data.announcement-link }}" class="link">{{ item.data.announcement }}</a></div>{%- endfor -%}
       </div>
       
     </div>
@@ -75,19 +75,8 @@
           </div>{%- endfor -%}
         </div>
         
-      </div><a href="#" class="lightbox-link w-inline-block w-lightbox"><script type="application/json" class="w-json">{
-  "items": [
-    {
-      "type": "video",
-      "originalUrl": "https://www.youtube.com/watch?v=DSi58_tbjt8&t=44s",
-      "url": "https://www.youtube.com/watch?v=DSi58_tbjt8&t=44s",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FDSi58_tbjt8%3Fstart%3D44%26feature%3Doembed%26start%3D44&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDSi58_tbjt8&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FDSi58_tbjt8%2Fhqdefault.jpg&args=start%3D44&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-      "thumbnailUrl": "https://i.ytimg.com/vi/DSi58_tbjt8/hqdefault.jpg",
-      "width": 940,
-      "height": 528
-    }
-  ]
-}</script></a></div>
+      </div>
+    </div>
     <div class="div-block-3">
       <div class="w-layout-grid grid-2">
         <div class="div-block-2"><img src="/static/images/5f29cf8a335f64732ce736cc_Group-593.svg" loading="lazy" alt="" class="image-9">
@@ -149,23 +138,21 @@
         <div class="footer-wrapper"><a href="#" class="secondary-link">Bit Project is a 501(c)(3) Nonprofit EIN84-2528709</a><a href="#" class="secondary-link">Terms &amp; Conditions</a><a href="#" class="footer-link">Privacy Policy</a></div>
         <div class="w-dyn-list">
           <div role="list" class="w-dyn-items">
-            <div role="listitem" class="w-dyn-item">
+            {%- assign collection = collections.chapters -%}{%- for item in collection -%}<div role="listitem" class="w-dyn-item">
               <div class="footer-wrapper">
-                <a link="Facebook" href="#" class="social-link w-inline-block">
+                <a href="{{ item.data.facebook }}" class="social-link w-inline-block">
                   <div data-w-id="782b18b6-7702-760b-3308-b3008fa11357" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5f246891a87fe01d99b10cfb/5f273e770311fc30c8047827_lottieflow-social-networks-15-4-ffffff-easey.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="1.4833333333333334" data-duration="0"></div>
                 </a>
-                <a link="Twitter" href="#" class="social-link w-inline-block">
+                <a href="{{ item.data.twitter }}" class="social-link w-inline-block">
                   <div data-w-id="782b18b6-7702-760b-3308-b3008fa11359" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5f246891a87fe01d99b10cfb/5f273e487cfa44708bed3bd0_lottieflow-social-networks-15-10-ffffff-easey.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0" class="lottie-animation-5"></div>
                 </a>
-                <a link="Instagram" href="#" class="social-link w-inline-block">
+                <a href="{{ item.data.instagram }}" class="social-link w-inline-block">
                   <div data-w-id="782b18b6-7702-760b-3308-b3008fa1135b" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5f246891a87fe01d99b10cfb/5f273e9cccdebbe0ab700d0e_lottieflow-social-networks-15-5-ffffff-easey.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="1.1833333333333333" data-duration="0" class="lottie-animation-6"></div>
                 </a>
               </div>
-            </div>
+            </div>{%- endfor -%}
           </div>
-          <div class="w-dyn-empty">
-            <div>No items found.</div>
-          </div>
+          
         </div>
       </div>
     </div>

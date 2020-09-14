@@ -17,7 +17,7 @@
   <div class="section-2">
     <div class="w-dyn-list">
       <div role="list" class="w-dyn-items">
-        {%- assign collection = collections.announcements -%}{%- for item in collection -%}<div role="listitem" class="collection-item w-dyn-item"><a href="{{ item.data.link }}" class="link">{{ item.data.announcement }}</a></div>{%- endfor -%}
+        {%- assign collection = collections.announcements -%}{%- for item in collection -%}<div role="listitem" class="collection-item w-dyn-item"><a href="{{ item.data.announcement-link }}" class="link">{{ item.data.announcement }}</a></div>{%- endfor -%}
       </div>
       
     </div>
@@ -68,23 +68,21 @@
         <div class="footer-wrapper"><a href="#" class="secondary-link">Bit Project is a 501(c)(3) Nonprofit EIN84-2528709</a><a href="#" class="secondary-link">Terms &amp; Conditions</a><a href="#" class="footer-link">Privacy Policy</a></div>
         <div class="w-dyn-list">
           <div role="list" class="w-dyn-items">
-            <div role="listitem" class="w-dyn-item">
+            {%- assign collection = collections.chapters -%}{%- for item in collection -%}<div role="listitem" class="w-dyn-item">
               <div class="footer-wrapper">
-                <a href="{{ facebook }}" class="social-link w-inline-block">
-                  <div data-w-id="d6dfe3c3-c3c9-30ec-c3fd-8bd842dc8406" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5f246891a87fe01d99b10cfb/5f273e770311fc30c8047827_lottieflow-social-networks-15-4-ffffff-easey.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="1.4833333333333334" data-duration="0"></div>
+                <a href="{{ item.data.facebook }}" class="social-link w-inline-block">
+                  <div data-w-id="713b426e-1562-badf-9663-b6454f4dc1f5" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5f246891a87fe01d99b10cfb/5f273e770311fc30c8047827_lottieflow-social-networks-15-4-ffffff-easey.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="1.4833333333333334" data-duration="0"></div>
                 </a>
-                <a href="{{ twitter }}" class="social-link w-inline-block">
-                  <div data-w-id="d6dfe3c3-c3c9-30ec-c3fd-8bd842dc8408" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5f246891a87fe01d99b10cfb/5f273e487cfa44708bed3bd0_lottieflow-social-networks-15-10-ffffff-easey.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0" class="lottie-animation-5"></div>
+                <a href="{{ item.data.twitter }}" class="social-link w-inline-block">
+                  <div data-w-id="713b426e-1562-badf-9663-b6454f4dc1f7" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5f246891a87fe01d99b10cfb/5f273e487cfa44708bed3bd0_lottieflow-social-networks-15-10-ffffff-easey.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0" class="lottie-animation-5"></div>
                 </a>
-                <a href="{{ instagram }}" class="social-link w-inline-block">
-                  <div data-w-id="d6dfe3c3-c3c9-30ec-c3fd-8bd842dc840a" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5f246891a87fe01d99b10cfb/5f273e9cccdebbe0ab700d0e_lottieflow-social-networks-15-5-ffffff-easey.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="1.1833333333333333" data-duration="0" class="lottie-animation-6"></div>
+                <a href="{{ item.data.instagram }}" class="social-link w-inline-block">
+                  <div data-w-id="713b426e-1562-badf-9663-b6454f4dc1f9" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5f246891a87fe01d99b10cfb/5f273e9cccdebbe0ab700d0e_lottieflow-social-networks-15-5-ffffff-easey.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="1.1833333333333333" data-duration="0" class="lottie-animation-6"></div>
                 </a>
               </div>
-            </div>
+            </div>{%- endfor -%}
           </div>
-          <div class="w-dyn-empty">
-            <div>No items found.</div>
-          </div>
+          
         </div>
       </div>
     </div>
