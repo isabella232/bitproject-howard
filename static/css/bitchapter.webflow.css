@@ -424,9 +424,13 @@
 }
 
 .image-28 {
-  max-width: 50%;
+  position: relative;
+  width: 450px;
+  max-width: none;
   padding-right: 40px;
   padding-left: 40px;
+  float: none;
+  clear: none;
 }
 
 .div-block-3 {
@@ -976,7 +980,7 @@
 }
 
 .footer-01 {
-  padding: 40px 3% 20px;
+  padding: 20px 3%;
   background-color: #252542;
 }
 
@@ -996,8 +1000,8 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 40px;
-  padding-bottom: 60px;
+  margin-bottom: 0px;
+  padding-bottom: 25px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -1006,7 +1010,7 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+  border-bottom: 1px none hsla(0, 0%, 100%, 0.1);
 }
 
 .footer-bottom {
@@ -1014,7 +1018,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 92px;
+  margin-top: 0px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -1178,6 +1182,14 @@
   flex: 1;
 }
 
+.image-29 {
+  max-width: 90%;
+}
+
+.collection-item-5 {
+  text-align: center;
+}
+
 @media screen and (max-width: 991px) {
   .section {
     background-color: #252542;
@@ -1222,6 +1234,7 @@
     flex-direction: column;
   }
   .image-28 {
+    width: 600px;
     max-width: 80%;
   }
   .grid-2 {
@@ -1307,6 +1320,9 @@
   .section-9 {
     padding-right: 24px;
     padding-left: 24px;
+  }
+  .collection-item-5 {
+    text-align: center;
   }
 }
 
@@ -1627,39 +1643,11 @@
 }
 
 @media screen and (max-width: 767px) {
-  #w-node-b3008fa11326-dc101b37 {
-    -ms-grid-row: span 1;
-    grid-row-start: span 1;
-    -ms-grid-row-span: 1;
-    grid-row-end: span 1;
-    -ms-grid-column: span 3;
-    grid-column-start: span 3;
-    -ms-grid-column-span: 3;
-    grid-column-end: span 3;
-  }
-  #w-node-b3008fa1133d-dc101b37 {
-    -ms-grid-column-align: auto;
-    justify-self: auto;
-  }
   #w-node-11d87f8b352f-81068fee {
     -ms-grid-column: span 6;
     grid-column-start: span 6;
     -ms-grid-column-span: 6;
     grid-column-end: span 6;
-  }
-  #w-node-98af6420a77f-81068fee {
-    -ms-grid-row: span 1;
-    grid-row-start: span 1;
-    -ms-grid-row-span: 1;
-    grid-row-end: span 1;
-    -ms-grid-column: span 3;
-    grid-column-start: span 3;
-    -ms-grid-column-span: 3;
-    grid-column-end: span 3;
-  }
-  #w-node-98af6420a796-81068fee {
-    -ms-grid-column-align: auto;
-    justify-self: auto;
   }
   #w-node-20f9197b795c-8c98b6ff {
     -ms-grid-column: span 6;
@@ -1667,33 +1655,9 @@
     -ms-grid-column-span: 6;
     grid-column-end: span 6;
   }
-  #w-node-262c039908fa-8c98b6ff {
-    -ms-grid-row: span 1;
-    grid-row-start: span 1;
-    -ms-grid-row-span: 1;
-    grid-row-end: span 1;
-    -ms-grid-column: span 3;
-    grid-column-start: span 3;
-    -ms-grid-column-span: 3;
-    grid-column-end: span 3;
-  }
-  #w-node-262c03990911-8c98b6ff {
-    -ms-grid-column-align: auto;
-    justify-self: auto;
-  }
 }
 
 @media screen and (max-width: 479px) {
-  #w-node-b3008fa11326-dc101b37 {
-    -ms-grid-row: span 1;
-    grid-row-start: span 1;
-    -ms-grid-row-span: 1;
-    grid-row-end: span 1;
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
   #w-node-c87e5db0a3e3-5db0a3e0 {
     -ms-grid-column-align: center;
     justify-self: center;
@@ -1704,16 +1668,6 @@
     -ms-grid-column-span: 4;
     grid-column-end: span 4;
   }
-  #w-node-98af6420a77f-81068fee {
-    -ms-grid-row: span 1;
-    grid-row-start: span 1;
-    -ms-grid-row-span: 1;
-    grid-row-end: span 1;
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
   #w-node-38d5c3b2c447-8c98b6ff {
     -ms-grid-column-align: center;
     justify-self: center;
@@ -1723,16 +1677,6 @@
     grid-column-start: span 4;
     -ms-grid-column-span: 4;
     grid-column-end: span 4;
-  }
-  #w-node-262c039908fa-8c98b6ff {
-    -ms-grid-row: span 1;
-    grid-row-start: span 1;
-    -ms-grid-row-span: 1;
-    grid-row-end: span 1;
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
   }
 }
 

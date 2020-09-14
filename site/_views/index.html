@@ -27,9 +27,12 @@
       <nav class="w-container">
         <ul role="list" class="nav-grid w-list-unstyled">
           <li id="w-node-c87e5db0a3e3-5db0a3e0">
-            <a href="/" aria-current="page" class="nav-logo-link w-inline-block w--current">
-              <h1 class="heading-3 white">Bit Project<br><span class="text-span">@Howard</span></h1>
-            </a>
+            <div class="w-dyn-list">
+              <div role="list" class="w-dyn-items">
+                {%- assign collection = collections.chapters -%}{%- for item in collection -%}<div role="listitem" class="w-dyn-item"><img loading="lazy" src="{{ item.data.logo-image }}" alt="" class="image-29"></div>{%- endfor -%}
+              </div>
+              
+            </div>
           </li>
           <li><a href="#about" class="nav-link white">About Us</a></li>
           <li><a href="#events" class="nav-link white">Events</a></li>
@@ -40,17 +43,38 @@
     </header>
     <div class="flex-container-4 w-container">
       <div class="div-block-20">
-        <h1 class="heading-15"><strong>Creating Global Tech Community</strong></h1>
-        <p class="paragraph-2 top">Empowering all students with the tools to learn technologies, educate their community, and contribute to open source technical projects.</p>
-        <div class="div-block-5 left"><a href="#" class="button-2 w-button"><strong class="bold-text-3">Contribute ➔</strong></a></div>
-      </div><picture class="lazyload"><source type="image/webp" srcset="/static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-500.png.webp 500w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-800.png.webp 800w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1080.png.webp 1080w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1600.png.webp 1600w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right.png.webp 1658w" sizes="(max-width: 767px) 80vw, (max-width: 991px) 76vw, 470px"><img loading="lazy" srcset="/static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-500.png 500w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-800.png 800w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1080.png 1080w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right-p-1600.png 1600w, /static/images/5f306b8ef273cf393ba00e6e_hero-photos-right.png 1658w" sizes="(max-width: 767px) 80vw, (max-width: 991px) 76vw, 470px" alt="" class="image-28 lazyload" data-src="/static/images/5f306b8ef273cf393ba00e6e_hero-photos-right.png"></picture></div>
+        <div class="w-dyn-list">
+          <div role="list" class="w-dyn-items">
+            {%- assign collection = collections.chapters -%}{%- for item in collection -%}<div role="listitem" class="w-dyn-item">
+              <h1 class="heading-15">{{ item.data.header-title }}</h1>
+              <p class="paragraph-2 top">{{ item.data.header-description }}</p>
+              <div class="div-block-5 left"><a href="{{ item.data.header-link }}" class="button-2 w-button"><strong class="bold-text-3">Contribute ➔</strong></a></div>
+            </div>{%- endfor -%}
+          </div>
+          
+        </div>
+      </div>
+      <div class="w-dyn-list">
+        <div role="list" class="w-dyn-items">
+          {%- assign collection = collections.chapters -%}{%- for item in collection -%}<div role="listitem" class="collection-item-5 w-dyn-item"><img loading="eager" src="{{ item.data.header-image }}" alt="" class="image-28"></div>{%- endfor -%}
+        </div>
+        
+      </div>
+    </div>
   </div>
   <header id="about" class="hero-2 grey">
     <div class="flex-container-5 w-container">
-      <div class="div-block-21">
-        <h1 class="heading-15">Transforming the Classroom.</h1>
-        <p class="paragraph-2 top">Join our community of software engineers, developers, and educators to transform education for students around the world. We develop open source curriculum written by students, for students. We use the power of collaboration and the experience of students all around the world to iterate and improve our teaching pedagogy.<br></p>
-        <div class="div-block-5 left"><a href="#" class="button-2 w-button"><strong class="bold-text-4">Contribute ➔</strong></a><a href="#" class="button-invert black w-button"><strong class="bold-text">Learn More</strong></a></div>
+      <div class="w-dyn-list">
+        <div role="list" class="w-dyn-items">
+          {%- assign collection = collections.chapters -%}{%- for item in collection -%}<div role="listitem" class="w-dyn-item">
+            <div class="div-block-21">
+              <h1 class="heading-15">{{ item.data.section-title }}</h1>
+              <p class="paragraph-2 top">{{ item.data.section-description }}</p>
+              <div class="div-block-5 left"><a href="{{ item.data.section-link-1 }}" class="button-2 w-button"><strong class="bold-text-4">Contribute ➔</strong></a><a href="{{ item.data.section-link-2 }}" class="button-invert black w-button"><strong class="bold-text">Learn More</strong></a></div>
+            </div>
+          </div>{%- endfor -%}
+        </div>
+        
       </div><a href="#" class="lightbox-link w-inline-block w-lightbox"><script type="application/json" class="w-json">{
   "items": [
     {
@@ -121,38 +145,27 @@
         <div class="footer-wrapper">
           <div class="footer-title-button">Passionate about Open Source Education?</div><a href="http://join.bitproject.org" target="_blank" class="button-3 w-button"><strong>Join The Family ➔</strong></a></div>
       </div>
-      <div class="w-layout-grid footer-grid-01">
-        <div id="w-node-b3008fa11326-dc101b37" class="footer-column">
-          <div class="footer-title-button">Subscribe to our newsletter ➔</div>
-          <div class="form-block w-form">
-            <form id="email-form" name="email-form" data-name="Email Form" class="form"><input type="email" class="text-field w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Email Address" id="email-2" required=""></form>
-            <div class="w-form-done">
-              <div>Thank you! Your submission has been received!</div>
-            </div>
-            <div class="w-form-fail">
-              <div>Oops! Something went wrong while submitting the form.</div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-column">
-          <div class="footer-title">Programs</div><a href="#" class="footer-link">Bit University</a><a href="#" class="footer-link">BitCamp</a><a href="#" class="footer-link">Workshops</a><a href="#" class="footer-link">Outreach</a></div>
-        <div id="w-node-b3008fa1133d-dc101b37" class="footer-column">
-          <div class="footer-title">About Us</div><a href="#" class="footer-link">About Us</a><a href="#" class="footer-link">Join the Team</a><a href="https://dev.to/bitproject" class="footer-link">Blog &amp;&nbsp;News</a></div>
-        <div class="footer-column">
-          <div class="footer-title">Help</div><a href="mailto:info@bitproject.org" class="footer-link">Contact Us</a><a href="#" class="footer-link">Donate</a></div>
-      </div>
       <div class="footer-bottom">
         <div class="footer-wrapper"><a href="#" class="secondary-link">Bit Project is a 501(c)(3) Nonprofit EIN84-2528709</a><a href="#" class="secondary-link">Terms &amp; Conditions</a><a href="#" class="footer-link">Privacy Policy</a></div>
-        <div class="footer-wrapper">
-          <a href="http://facebook.com/bitproject.org" class="social-link w-inline-block">
-            <div data-w-id="782b18b6-7702-760b-3308-b3008fa11357" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5f246891a87fe01d99b10cfb/5f273e770311fc30c8047827_lottieflow-social-networks-15-4-ffffff-easey.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="1.4833333333333334" data-duration="0"></div>
-          </a>
-          <a href="http://twitter.com/bitprj" class="social-link w-inline-block">
-            <div data-w-id="782b18b6-7702-760b-3308-b3008fa11359" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5f246891a87fe01d99b10cfb/5f273e487cfa44708bed3bd0_lottieflow-social-networks-15-10-ffffff-easey.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0" class="lottie-animation-5"></div>
-          </a>
-          <a href="http://instagram.com/bitprojectorg" class="social-link w-inline-block">
-            <div data-w-id="782b18b6-7702-760b-3308-b3008fa1135b" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5f246891a87fe01d99b10cfb/5f273e9cccdebbe0ab700d0e_lottieflow-social-networks-15-5-ffffff-easey.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="1.1833333333333333" data-duration="0" class="lottie-animation-6"></div>
-          </a>
+        <div class="w-dyn-list">
+          <div role="list" class="w-dyn-items">
+            <div role="listitem" class="w-dyn-item">
+              <div class="footer-wrapper">
+                <a link="Facebook" href="#" class="social-link w-inline-block">
+                  <div data-w-id="782b18b6-7702-760b-3308-b3008fa11357" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5f246891a87fe01d99b10cfb/5f273e770311fc30c8047827_lottieflow-social-networks-15-4-ffffff-easey.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="1.4833333333333334" data-duration="0"></div>
+                </a>
+                <a link="Twitter" href="#" class="social-link w-inline-block">
+                  <div data-w-id="782b18b6-7702-760b-3308-b3008fa11359" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5f246891a87fe01d99b10cfb/5f273e487cfa44708bed3bd0_lottieflow-social-networks-15-10-ffffff-easey.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0" class="lottie-animation-5"></div>
+                </a>
+                <a link="Instagram" href="#" class="social-link w-inline-block">
+                  <div data-w-id="782b18b6-7702-760b-3308-b3008fa1135b" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5f246891a87fe01d99b10cfb/5f273e9cccdebbe0ab700d0e_lottieflow-social-networks-15-5-ffffff-easey.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="1.1833333333333333" data-duration="0" class="lottie-animation-6"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-dyn-empty">
+            <div>No items found.</div>
+          </div>
         </div>
       </div>
     </div>
