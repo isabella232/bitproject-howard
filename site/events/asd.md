@@ -7,8 +7,11 @@ seo:
   twitter:card: summary
 datetime: asd
 description: asd
+icon: /static/images/uploads/group-79.svg
 rsvp-link: asd
+featured-image: /static/images/uploads/group-79.svg
 facebook: asd
 twitter: asd
 instagram: asd
 ---
+asd asd asd
