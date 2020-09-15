@@ -5,6 +5,7 @@ date: 2020-09-14T01:03:44.261Z
 layout: single-chapters.html
 seo:
   twitter:card: summary
+logo-image: /static/images/uploads/group-39.png
 header-title: Creating Global Tech Community
 header-description: >
   Empowering all students with the tools to learn technologies, educate their
